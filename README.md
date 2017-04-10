@@ -1,7 +1,7 @@
 ## Getting-and-cleaning-data
 programming assignment
 
-#Introduction
+# Introduction
 
 For this project, the dataset that is worked with is the Human Activity Recognition Using Smartphones Data Set from  the UCI Machine Learning Repository. The data is collected from the recordings of 30 subjects performing 6 different types daily living activities while carrying a waist-mounted smartphone with embedded inertial sensors:
 
