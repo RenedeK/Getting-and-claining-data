@@ -28,7 +28,7 @@ Included in this repository are **4** files:
 
 - `run_analysis.R` - code that downloads the data, processes it, and uploads a clean dataset
 
-- `UCI HAR Tidy Averages Dataset.txt` - final tidy dataset with the average values of each variable for each activity and each subject
+- `Dataset_with_averages.txt` - final tidy dataset with the average values of each variable of each activity and each subject
 
 ## Original Data
 
@@ -40,7 +40,7 @@ The original data repository included **4** text files and **2** folders:
 
 - `features_info.txt` - explaination for how the 561 variables are created and what they mean
 
-- `README.txt` - overview of dataset
+- `README.txt` - overview of the dataset
 
 - **`test`** - folder containing the *test* subset of data (2947 observations), which contain 3 text files and 1 folder
 
@@ -63,7 +63,7 @@ The original data repository included **4** text files and **2** folders:
     - `y_train.txt` - mapping of each observation to the activity performed (number 1 to 6)
     
 
-## Transformations/Processing
+## Processing
 
 The processing performed on the data is executed by the **`run_analysis.R`** script in this repository, and it can be divided to roughly 6 parts:
 
@@ -73,11 +73,11 @@ The code checks for whether the unzip data directory already exists in the worki
 
 **2. Merge `train` And `test` Subject and Activity Data**
 
-The subject and activity data are combined into separate columns first by row binding the corresponding files (`subject_train.txt`, `subject_test.txt`, `y_train.txt`, and `y_test.txt`) from the `train` and `test` folders, and then column binding the two columns. The result is a 10299 by 2 data frame containing 1 column for subject and 1 column for activity. 
+The subject and activity data are combined into separate columns first by row binding the corresponding files (`x_train.txt`, `x_test.txt`, `subject_train.txt`, `subject_test.txt`, `y_train.txt`, and `y_test.txt`) from the `train` and `test` folders, and then column binding the columns. The result is a 10299 by 2 data frame containing 1 column for subject and 1 column for activity. 
 
 **3. Replace `activity` Data and Subsetting `mean` and `std` Data**
 
-The numeric values (1 to 6) in `activity` column are replaced with corresponding text descriptions (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) from the mapping provided by the `activity_labels.txt` file.
+The numeric values (1 to 6) in `activity` column are replaced with corresponding text descriptions (walking, walking_upstairs, walking downstairs, sitting, standing, laying) from the mapping provided by the `activity_labels.txt` file.
 
 The `train` and `test` observation data are combined to create a 10299 by 561 dataframe. The `grep` function is then used to find the column indices of any variable that contains "mean" or "std" (standard deviation) data. 79 variables are found. The subset of data for these 79 variables is then column bound with the subject and activity dataframe to create a 10299 by 81 dataframe.
 
