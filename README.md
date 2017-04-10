@@ -3,7 +3,7 @@ programming assignment
 
 ## Introduction
 
-For this project, the dataset that is with is the ***Human Activity Recognition Using Smartphones Data Set*** from the UCI Machine Learning Repository. The data is collected from the recordings of **30** subjects performing **6** different types daily living activities while carrying a waist-mounted smartphone with embedded inertial sensors: 
+For this project, the dataset that is used is the "Human Activity Recognition Using Smartphones Data Set" from the UCI Machine Learning Repository. The data is collected from the recordings of 30 subjects performing 6 different types daily living activities while carrying a waist-mounted smartphone with embedded inertial sensors: 
 
 - walking
 
@@ -22,11 +22,11 @@ The dataset can be manually downloaded [here](https://d396qusza40orc.cloudfront.
 
 Included in this repository are **4** files:
 
-- `README.md` - this file providing the overview of the project and files included in this repository
+- `README.md` - this file provides an overview of the project and files included in this repository
 
-- `Codebook.md` - describes all of the variables
+- `Codebook.md` - describes the variables
 
-- `run_analysis.R` - script that downloads the provided data, processed it, and outputs the clean dataset
+- `run_analysis.R` - code that downloads the data, processes it, and uploads a clean dataset
 
 - `UCI HAR Tidy Averages Dataset.txt` - final tidy dataset with the average values of each variable for each activity and each subject
 
