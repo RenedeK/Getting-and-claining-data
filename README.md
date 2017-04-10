@@ -1,14 +1,17 @@
-# Getting-and-cleaning-data
+## Getting-and-cleaning-data
 programming assignment
 
-Introduction
+#Introduction
+
 For this project, the dataset that is worked with is the Human Activity Recognition Using Smartphones Data Set from  the UCI Machine Learning Repository. The data is collected from the recordings of 30 subjects performing 6 different types daily living activities while carrying a waist-mounted smartphone with embedded inertial sensors:
-walking
-walking upstairs
-walking downstairs
-sitting
-standing
-laying
+
+- walking
+- walking upstairs
+- walking downstairs
+- sitting
+- standing
+- laying
+
 The full description can be found here and the dataset can be manually downloaded here. However, the script automatically downloads the data directory so there's no need to manually download it.
 Included in this repository are 4 files:
 README.md - this file providing the overview of the project and files included in this repository
