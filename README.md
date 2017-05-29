@@ -1,7 +1,7 @@
-## Getting-and-cleaning-data
-# Programming assignment
+# Getting-and-cleaning-data
+## Programming assignment
 
-Included in this repository are **4** files:
+## Included in this repository are **4** files:
 
 - `README.md` - this file provides an overview of the project and files included in this repository
 
@@ -11,7 +11,7 @@ Included in this repository are **4** files:
 
 - `Dataset_with_averages.txt` - final tidy dataset with the average values of each variable of each activity and each subject
 
-The R script "run_analysis.R" does the following:
+## The R script "run_analysis.R" does the following:
 
 - set the workdir to the assigned directory
 
