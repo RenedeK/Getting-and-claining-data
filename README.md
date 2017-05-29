@@ -1,5 +1,5 @@
 ## Getting-and-cleaning-data
-programming assignment
+# Programming assignment
 
 Included in this repository are **4** files:
 
